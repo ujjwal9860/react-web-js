@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Poppins', sans-serif;
+      }
+
+      :root {
+        --basecolor: #1E293B;
+      }
+
+
+
+      header {
+        background-color: var(--basecolor);
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 10px 10px;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+        padding-left: 20px;
+
+      }
+
+      .logo {
+        display: flex;
+        align-items: baseline;
+        gap: 10px;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      form button {
+        border: none;
+        padding: 3px 3px;
+      }
+
+      form input {
+        padding: 3px 12px;
+        width: 70%;
+        /* outline: 2px solid burlywood; */
+      }
+
+      form input:focus {
+        outline: 2px solid burlywood;
+        border: none;
+      }
+
+      .dis-section {
+        background-color: var(--basecolor);
+        color: white;
+        padding: 0 10px;
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        /* align-items: center; */
+        height: 220px;
+        margin-bottom: 8rem;
+
+      }
+
+
+      .dis-info {
+        justify-self: center;
+        line-height: 2rem;
+        padding-top: 25px;
+      }
+
+      .dis-img img {
+        height: 300px;
+        /* object-fit: cover; */
+      }
+
+      .courses-section {
+        display: grid;
+        /* grid-template-columns: repeat(3, 1fr); (autofit means mobile haru ma fit garna) */
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 10px;
+        margin-bottom: 40px;
+      }
+
+      .course-info {
+        text-align: center;
+        line-height: 2.2rem;
+      }
+
+      .course {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      }
+
+      .testimonal {
+        margin: 40px 0px;
+        display: grid;
+        /* grid-template-columns: repeat(4, 1fr); */
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 10px;
+      }
+
+      .user {
+        background-color: #35374B;
+        padding: 10px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        color: white;
+      }
+
+      .user p {
+        font-size: 13px;
+      }
+
+      .user-info {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        gap: 10px;
+        align-items: center;
+      }
+
+      .user-info img {
+        /* clip-path: circle(); yesle ni circle banaucha picture lai */
+        border-radius: 50%;
+        height: 70px;
+        width: 70px;
+      }
+
+      @media(max-width:880px) {
+        .dis-section {
+          grid-template-columns: 1fr;
+          height: auto;
+          margin-bottom: 40px;
+        }
+
+        .dis-img {
+          justify-self: center;
+          height: auto;
+        }
+      }
+
+      @media(max-width:430px) {
+        .dis-section {
+          grid-template-columns: 1fr;
+          height: auto;
+          margin-bottom: 40px;
+        }
+      }
+    </style>
+
+  </head>
+
+  <body>
+
+    <header>
+      <div class="logo">
+
+        <i style="color: blueviolet;" class="fa-brands fa-slack fa-2x"></i>
+
+
+        <h1>Course Web</h1>
+
+      </div>
+      <nav>
+        <a href="">About</a>
+        <a href="">Contact</a>
+
+      </nav>
+    </header>
+
+    <!--===========================================================-->
+
+    <div class="dis-section">
+      <div class="dis-info">
+        <h3>Learn any digital skill of your choice today</h3>
+        <p>Over 30000 students currently learn with us</p>
+        <form>
+          <input type="text" placeholder="Search Courses">
+          <button>start learning</button>
+        </form>
+        <p>Over 30000 students currently learn with us</p>
+      </div>
+      <div class="dis-img">
+        <img
+          src="https://images.unsplash.com/photo-1495465798138-718f86d1a4bc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c3R1ZHl8ZW58MHx8MHx8fDA%3D"
+          alt="dd">
+
+      </div>
+    </div>
+    <!-- ========================================================= -->
+
+    <main>
+      <div class="courses-section">
+
+        <div class="course">
+
+          <div class="course-info">
+            <i class="fa-brands fa-css3 fa-2xl"></i>
+            <h3>Over 300 available courses</h3>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eius a architecto similique. Ipsum, deserunt
+            sed esse eius facilis eum.</p>
+        </div>
+        <div class="course">
+
+          <div class="course-info">
+            <i class="fa-brands fa-css3 fa-2xl"></i>
+            <h3>Over 300 available courses</h3>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eius a architecto similique. Ipsum, deserunt
+            sed esse eius facilis eum.</p>
+        </div>
+        <div class="course">
+
+          <div class="course-info">
+            <i class="fa-brands fa-css3 fa-2xl"></i>
+            <h3>Over 300 available courses</h3>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eius a architecto similique. Ipsum, deserunt
+            sed esse eius facilis eum.</p>
+        </div>
+      </div>
+      <!-- =================================================== -->
+      <div class="testimonal">
+        <div class="user">
+          <div class="user-info">
+            <div>
+              <img src="assets/pictures/messi.jpg" alt="messi">
+            </div>
+
+            <div>
+              <h3>Lionel messi</h3>
+              <p>Remix & React Training</p>
+            </div>
+          </div>
+
+          <p>I feel like an idiot for not using Tailwind CSS until now. </p>
+        </div>
+        <div class="user">
+          <div class="user-info">
+            <div>
+              <img src="assets/pictures/messi.jpg" alt="messi">
+            </div>
+
+            <div>
+              <h3>Lionel messi</h3>
+              <p>Remix & React Training</p>
+            </div>
+          </div>
+
+          <p>I feel like an idiot for not using Tailwind CSS until now. </p>
+        </div>
+        <div class="user">
+          <div class="user-info">
+            <div>
+              <img src="assets/pictures/messi.jpg" alt="messi">
+            </div>
+
+            <div>
+              <h3>Lionel messi</h3>
+              <p>Remix & React Training</p>
+            </div>
+          </div>
+
+          <p>I feel like an idiot for not using Tailwind CSS until now. </p>
+        </div>
+        <div class="user">
+          <div class="user-info">
+            <div>
+              <img src="assets/pictures/messi.jpg" alt="messi">
+            </div>
+
+            <div>
+              <h3>Lionel messi</h3>
+              <p>Remix & React Training</p>
+            </div>
+          </div>
+
+          <p>I feel like an idiot for not using Tailwind CSS until now. </p>
+        </div>
+
+      </div>
+    </main>
+
+
+
+
+
+  </body>
+
+</html>
